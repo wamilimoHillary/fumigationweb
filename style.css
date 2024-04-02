@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: 100% 100%;
+    background-size: cover;
+}
+
+body{
+    background-color: tomato;
+}
+/*-------------hearder...................--*/
+header{
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    background-image: url(images/per6.png);
+    background-position: 100% 100%;
+    background-size: cover;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    list-style: none;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    justify-content: space-between;
+    font-size: large;
+    font-style: bold;
+     
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 10px;
+    font-size: 25px;
+}
+
+nav:hover{
+    background-color: rgb(15, 82, 15);
+}
+
+a:hover{
+    color:  rgb(255, 116, 9);
+}
+
+
+#nav-btn{
+    width: fit-content;
+    padding: 5px 10px;
+    margin: 10px auto auto 20px;
+}
+
+#nav-btn:hover{
+  background-color: rgb(255, 116, 9) ;
+}
+.logo{
+    width: 10%;
+    height: 20%;
+    background-color: ;  /*adjust the background color of logo*/
+    position: relative;
+    top:20px;             /*adjust position of logo*/
+    left:7%;           /*adjust position of logo*/
+    border-radius: 50%;
+    
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: rotateLogo 4s linear 1s infinite; 
+}
+
+@keyframes rotateLogo {
+    0%{
+        transform: rotateY(0deg); /* Starting rotation angle */
+    }
+    50%{
+        transform: rotateY(80deg); /* Starting rotation angle */
+    }
+    100%{
+        transform: rotateY(0deg); /* Ending rotation angle */
+    }
+}
+.title{
+    color: white;
+    background-color: ;
+    width: 80%;
+    height:fit-content;
+    position: relative;
+    top:20%;  /*adjust position of title*/
+    left: 15%; /*adjust position of title*/
+    text-align: center;
+    
+}
+
+.title h1{
+    font-size: 55px;
+    -webkit-text-stroke: 1px  rgb(255, 116, 9);;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: rotateLogo 7s linear 2s infinite; 
+}
+
+
+
+/*---------- all sections.........*/
+section{
+    margin: auto;
+    text-align: center;
+    background-color: rgb(13, 92, 13);
+    height: auto;
+    color: #fff;
+    padding: 20px;
+}
+
+.row{
+     height: fit-content;
+    margin:2px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /*to make sure space is betwwen the columns */
+    flex-wrap: wrap;
+
+}
+
+
+.column {
+    background-color: rgb(13, 92, 13);
+    width: 100%;
+    height:auto;
+    margin: 15px; /*space in column*/
+    flex: 1;
+  padding: 5px;
+  border:;
+  text-align: justify;
+  border-radius: 16px;
+  color: #fff;
+ 
+}
+
+
+/* first section of introduction*/
+
+
+
+#introduction{
+    flex:1;
+    padding: 30px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#introduction h2{
+    font-size:60px;
+    text-align: start;
+    line-height: 60px;
+}
+ 
+
+#know_More_btn{
+background-color: rgb(255, 116, 9);;
+color:#fff;
+padding: 10px;
+border-radius: 10px;
+font-weight: bold;
+margin-top: 40px;
+}
+
+#know_More_btn:hover{
+  opacity: 0.5;
+    }
+
+
+ /*services section*/
+#services_section,#about_section{
+    padding: 20px;
+    line-height: 30px;
+    color:  rgb(255, 116, 9);
+    
+}
+
+/*about section and intro section*/
+ #animate{
+    flex:2; /*take 2 columns more than other column*/
+    height: 380px;
+    background-color: rgb(13, 92, 13);
+    background-repeat: no-repeat;
+    animation: example 8s infinite normal;
+    background-size: cover;
+     padding:20px;
+    
+}
+
+@keyframes example{
+    0%{ background-image: url(images/b.jpg);background-position:-700px 0;}
+   25%{ background-image: url(images/PER1.png); background-position:100% 100%;}
+   75%{ background-image: url(images/PER2.png);background-position:100% 100% ;}
+   75%{ background-image: url(images/per3.png);background-position:50% 20% ; background-size: contain;border-radius: 16px;}
+   100%{ background-image: url(images/block2.jpg);background-position: 750px 0;}
+}
+
+
+/*......dropdown div..............*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color:  rgb(255, 116, 9);
+    width:100%;
+
+
+  }
+  
+  .hidden-content{
+    display:none;
+    background-color:rgb(13, 92, 13);
+    position:relative;
+    width: 100%;
+    height:fit-content;
+    box-shadow: 0px 8px 16px 0px  rgb(255, 116, 9);
+    z-index: 1;
+    border-radius: 10px;
+    padding: 10px;
+
+  }
+  
+  .dropdown:hover .hidden-content{
+  display: block;
+  }
+
+
+ /*.... contact page....*/
+#contact_section .fa{
+    font-size: xx-large;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: rgb(13, 84, 13);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    height: 100px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+   float: inline-start;
+  
+   
+}
+
+.footer-links a:hover {
+    color: #ccc;
+}
+
+
+
+
+
+@media screen and (max-width:900px) {
+ *{
+  margin: 0;
+  padding: 0;
+ }
+ /* header*/
+
+header{
+    height: fit-content;
+}
+   nav{
+   flex-direction:column;
+float:none;
+background-image: url(images/block1.jpg);
+ top: 15%;
+ left:10px;
+ position: absolute;
+ width: fit-content;
+ padding: 0;
+ visibility: hidden;
+ z-index: 1;
+  }
+
+   a{
+    margin-top:30px;
+    font-size: xx-large;
+   }
+
+   #nav-btn{
+    left: 0;
+   }
+
+/*logo*/
+.logo{
+    margin-right: 25%;
+    margin-top: 2px;   
+    float: right;  
+    width: 15%; 
+    height: 10%;
+}
+
+.title{
+    margin-top: 20%;
+    
+}
+
+.title h1{
+    font-size:xx-large;
+}
+
+.title h2,p{
+    font-size:small;
+}
+   /*-----SECTION--*/
+   .column{
+    flex:100%;
+    margin: 10px;
+   }
+
+
+/* first section of introduction*/
+#introduction h2{
+  font-size: x-large;
+  line-height: normal;
+}
+
+#animate{
+    flex: 100%;
+  }
+
+footer a{
+    font-size: small;
+}
+}
+
